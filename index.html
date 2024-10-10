@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <body background="images/width1960.webp">
+    <header>
+        <div class="logo">
+            <h1>Fanta</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#flavors">Flavors</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <form class="search-form" onsubmit="return handleSearch(event)">
+            <input type="text" placeholder="Search..." class="search-input" required>
+            <button type="submit">Search</button>
+        </form>
+    </header>
+
+    <main>
+        <section id="about" class="fade-in">
+            <h2>About Fanta</h2>
+            <div class="about-container">
+                <img src="images/download (5).jpg"/>
+                <div class="about-hover">
+                    <h3>Fanta's Journey</h3>
+                    <p>
+                
+                        <p>Fanta is a fruit-flavored carbonated soft drink created by The Coca-Cola Company. 
+                        Originally developed in Germany during World War II due to a shortage of ingredients for Coca-Cola, 
+                        Fanta was born out of creativity and necessity. Since its creation in 1940,
+                         Fanta has grown to become one of the world's most popular soft drinks, enjoyed in over 180 countries.</p>
+                        <p>Fanta is known for its vibrant flavors, appealing to a wide range of taste preferences.
+                             Its most iconic flavor, Orange, is a refreshing blend that captures the essence of sun-ripened oranges. 
+                        In addition to Orange, Fanta offers a variety of flavors, including Grape, Strawberry, Pineapple, and Fruit Punch, each crafted to deliver a unique taste experience.</p>
+                        <p>The brand has also embraced local flavors, introducing region-specific variants that 
+                            resonate with consumers around the world. From exotic tropical fruits to seasonal offerings, 
+                            Fanta continuously innovates to keep its lineup exciting. With its fun and playful marketing campaigns,
+                             Fanta invites consumers to indulge in moments of joy and refreshment, making it a 
+                             favorite choice for gatherings, celebrations, and everyday enjoyment.</p>
+                </p>
+                </div>
+            </div>
+        </section>
+        <section id="video" class="fade-in">
+            <div class="video-container">
+                <iframe src="https://www.youtube.com/embed/tucMVcbJ874" 
+                        frameborder="0" 
+                        allowfullscreen 
+                        title="Fanta Commercial - Refreshing Moments"></iframe>
+            </div>
+        </section>        
+        
+    <section id="products" class="fade-in">
+        <h2>Our Products</h2>
+        <div class="product-list">
+            <div class="product">
+                <img src="images/download.jpg"/>
+                <h3>Fanta Orange</h3>
+                <p>Refreshing orange flavor.</p>
+            </div>
+            <div class="product">
+                <img src="images/download (1).jpg"/>
+                <h3>Fanta Grape</h3>
+                <p>Delicious grape flavor.</p>
+            </div>
+            <div class="product">
+                <img src="images/download (4).jpg"/>
+                <h3>Fanta Strawberry</h3>
+                <p>Sweet strawberry flavor.</p>
+            </div>
+        </div>
+    </section>
+    <section id="testimonials" class="fade-in">
+        <h2>What Our Fans Say</h2>
+        <div class="testimonial-container">
+            <div class="testimonial">
+                <div class="testimonial-hover">
+                    <h4>Sarah K.</h4>
+                    <p>"Fanta is my go-to drink for every summer party! The flavors are always a hit!"</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-hover">
+                    <h4>Mike T.</h4>
+                    <p>"I love the innovative flavors Fanta comes up with! Always something new to try!"</p>
+                </div>
+            </div>
+            <div class="testimonial">
+                <div class="testimonial-hover">
+                    <h4>Emily R.</h4>
+                    <p>"Fanta brings back so many childhood memories! It's always refreshing!"</p>
+                </div>
+            </div>
+        </div>
+    </section>      
+    <section id="flavors" class="fade-in">
+        <h2>Available Flavors</h2>
+        <div class="flavors-container">
+            <div class="flavor">
+                <img src="images/download (6).jpg"/>
+                <div class="flavor-hover">
+                    <h3>Orange</h3>
+                    <p>Classic and refreshing!</p>
+                </div>
+            </div>
+            <div class="flavor">
+                <img src="images/download (7).jpg"/>
+                <div class="flavor-hover">
+                    <h3>Grape</h3>
+                    <p>Sweet and fruity!</p>
+                </div>
+            </div>
+            <div class="flavor">
+                <img src="images/download (8).jpg"/>
+                <div class="flavor-hover">
+                    <h3>Strawberry</h3>
+                    <p>Delightfully sweet!</p>
+                </div>
+            </div>
+            <div class="flavor">
+                <img src="images/download (9).jpg"/>
+                <div class="flavor-hover">
+                    <h3>Pineapple</h3>
+                    <p>Tropical twist!</p>
+                </div>
+            </div>
+            <div class="flavor">
+                <img src="images/download (10).jpg"/>
+                <div class="flavor-hover">
+                    <h3>Fruit Punch</h3>
+                    <p>Fruity explosion!</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="fade-in">
+        <h2>Contact Us</h2>
+        <form id="contact-form">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+            
+            <button type="submit">Send</button>
+        </form>
+    </section>
+    
+    <section id="blog" class="fade-in">
+        <h2>Latest Blog Posts</h2>
+        <div class="blog-container">
+            <div class="blog-post">
+                <div class="blog-hover">
+                    <h3>Refreshing Summer Drinks with Fanta</h3>
+                    <p>Discover delicious recipes to enjoy Fanta in refreshing summer drinks. Perfect for parties and gatherings!</p>
+                    <a href="link-to-full-post-1" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="blog-hover">
+                    <h3>Fanta Flavor Innovations</h3>
+                    <p>Learn about the latest flavors being introduced and how Fanta is bringing local tastes to global markets.</p>
+                    <a href="link-to-full-post-2" class="read-more">Read More</a>
+                </div>
+            </div>
+            <div class="blog-post">
+                <div class="blog-hover">
+                    <h3>Celebrating Fanta's Journey</h3>
+                    <p>A look back at Fanta's history and its evolution over the years. Join us in celebrating our journey!</p>
+                    <a href="link-to-full-post-3" class="read-more">Read More</a>
+                </div>
+            </div>
+        </div>
+    </section>    
+    <footer>
+        <p>&copy; 2024 Fanta. All rights reserved.</p>
+        <p>
+            Sponsored by <strong>Coca-Cola Company</strong>
+            <img src="images/images (1).jpg" class="coca-cola-logo" />
+        </p>
+        <p>Follow us on:</p>
+    <ul class="social-media">
+        <li>
+            <a href="https://www.facebook.com/Fanta" target="_blank">
+                <img src="images/download.png" alt="Facebook" class="social-icon" />
+            </a>
+        </li>
+        <li>
+            <a href="https://www.instagram.com/Fanta" target="_blank">
+                <img src="images/download (1).jpeg" alt="Instagram" class="social-icon" />
+            </a>
+        </li>
+        <li>
+            <a href="https://twitter.com/Fanta" target="_blank">
+                <img src="images/images (2).png" alt="Twitter" class="social-icon" />
+            </a>
+        </li>
+    </ul>
+    <ul class="footer-links">
+        <li><a href="https://www.fanta.com/faqs" target="_blank">FAQs</a></li>
+        <li><a href="https://www.fanta.com/privacy-policy" target="_blank">Privacy Policy</a></li>
+        <li><a href="https://www.fanta.com/terms-of-service" target="_blank">Terms of Service</a></li>
+    </ul>
+    <div class="sign-up-form">
+        <h3>Sign Up for Updates</h3>
+        <form id="sign-up" action="#" method="post">
+            <input type="email" placeholder="Enter your email" required>
+            <button type="submit">Subscribe</button>
+        </form>
+    </div>
+
+    <p>Designed by <strong>Malone Phillip</strong></p>
+    <p>Contact: <strong>0748772131</strong> | WhatsApp: <strong><a href="https://wa.me/254748772131">0748772131</a></strong></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

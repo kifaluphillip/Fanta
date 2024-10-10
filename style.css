@@ -1,0 +1,417 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #ff6f20;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+}
+
+.logo h1 {
+    font-family: 'Fredoka', sans-serif;
+    font-size: 2.5em;
+    margin: 0;
+    animation: bounce 1s infinite;
+}
+nav ul {
+    list-style-type: none;
+    display: flex;
+    gap:20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+header {
+    display: flex;
+    align-items: center; /* Center items vertically */
+    justify-content: space-between;
+    padding: 10px; /* Add padding for aesthetics */
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav a:hover {
+    color: #ffd700;
+}
+
+main {
+    padding: 20px;
+    color: #222;
+}
+
+section {
+    margin-bottom: 40px;
+}
+.search-form {
+    display: flex;
+    align-items: center; /* Center the search input and button */
+}
+
+.search-input {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    flex: 1; /* Makes the input take available space */
+    transition: border-color 0.3s;
+}
+
+.search-input:focus {
+    outline: none;
+    border-color: #007BFF; /* Change to your preferred color */
+}
+
+button {
+    padding: 8px 12px;
+    border: none;
+    background-color: #007BFF; /* Change to your preferred color */
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-left: 5px; /* Space between input and button */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+.about-container {
+    position: relative;
+    text-align: center;
+}
+
+.about-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.about-hover {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    color: white;
+    padding: 15px;
+    border-radius: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    width: calc(100% - 30px); /* Account for padding */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.about-container:hover .about-hover {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.about-hover h3 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+.about-hover p {
+    font-size: 1em;
+}
+.video-container {
+    text-align: center; /* Center the video */
+    margin: 20px 0; /* Margin for spacing */
+}
+
+.video-container iframe {
+    width: 100%; /* Full width */
+    max-width: 800px; /* Max width to prevent stretching */
+    height: 450px; /* Set height */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+}
+.product-list {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    background-color: #ffb347;
+    border-radius: 10px;
+    padding: 15px;
+    flex: 1;
+    min-width: 200px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.product img {
+    width: 50%;
+    height: auto;
+    border-radius: 10px;
+    mix-blend-mode: multiply;
+}
+
+.product:hover {
+    transform: scale(1.05);
+}
+.testimonial-container {
+    display: flex;
+    flex-direction: inline-block;
+    gap: 20px; /* Space between testimonials */
+    margin: 20px 0; /* Margin for spacing */
+}
+.testimonial {
+    position: relative;
+    overflow: hidden; /* Hide overflow for a clean hover effect */
+    border: 1px solid #ccc; /* Border */
+    border-radius: 5px; /* Rounded corners */
+    background:#f9f9f9; /* Light background */
+    height: 120px; /* Set height for consistent display */
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+.testimonial:hover .testimonial-hover {
+    opacity: 1; /* Show content on hover */
+}
+
+.testimonial h4 {
+    margin: 0; /* No margin for the name */
+    font-weight: bold; /* Bold weight for name */
+    color: #333; /* Darker color */
+}
+
+.testimonial p {
+    margin-top: 10px; /* Space above the comment */
+    text-align: center; /* Centered text */
+}
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+}
+.flavors-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.flavor {
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.flavor img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.flavor:hover img {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+
+.flavor-hover {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Dark overlay */
+    color: white;
+    opacity: 0;
+    transition: opacity 0.3s;
+    text-align: center;
+}
+
+.flavor:hover .flavor-hover {
+    opacity: 1; /* Show overlay on hover */
+}
+
+.flavor-hover h3 {
+    font-size: 1.5em;
+    margin: 0;
+}
+
+.flavor-hover p {
+    font-size: 1em;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+#contact {
+    transition: background-color 0.3s ease; /* Smooth transition for background */
+}
+
+#contact:hover {
+    background-color: hsl(52, 100%, 97%); /* Light color on hover */
+}
+
+#contact h2 {
+    margin-bottom: 10px; /* Space below heading */
+}
+
+#contact form {
+    display: flex;
+    flex-direction: inline-block; /* Column layout */
+}
+
+#contact label {
+    margin-bottom: 5px; /* Space below labels */
+}
+#contact input, 
+#contact textarea {
+    padding: 10px;
+    margin-bottom: 15px; /* Space below input fields */
+    border: 1px solid #ccc; /* Border for input fields */
+    border-radius: 5px; /* Rounded corners */
+    transition: border-color 0.3s ease; /* Smooth transition for border */
+}
+
+#contact input:focus, 
+#contact textarea:focus {
+    border-color: #007BFF; /* Highlight border on focus */
+}
+#contact button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+#contact button:hover {
+    background-color: #0056b3; /* Darker button color on hover */
+}
+.blog-container {
+    display: flex;
+    flex-direction: inline-block;
+    gap: 20px; /* Space between blog posts */
+    background-color: #cccb;
+}
+.blog-post {
+    position: relative;
+    overflow: hidden; /* Hide overflow for a clean hover effect */
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: transform 0.3s ease; /* Smooth scaling effect */
+}
+.blog-post:hover {
+    transform: scale(1.05); /* Scale up on hover */
+}
+.blog-post h3 {
+    margin: 0 0 10px; /* Space below the title */
+}
+
+.read-more {
+    display: inline-block;
+    margin-top: 10px;
+    color: #007BFF; /* Link color */
+    text-decoration: none;
+}
+
+.read-more:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #ff6f20;
+    color: white;
+    position: relative;
+}
+.coca-cola-logo {
+    height: 40px; /* Adjust the size as needed */
+    vertical-align: middle; /* Align with text */
+    margin-left: 10px; /* Space between text and logo */
+}
+.social-media {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social-media li {
+    display: inline;
+}
+
+.social-icon {
+    width: 30px; /* Adjust the size as needed */
+    height: auto; /* Maintain aspect ratio */
+    transition: transform 0.3s;
+}
+
+.social-icon:hover {
+    transform: scale(1.1); /* Zoom effect on hover */
+}
+.footer-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+}
+
+.footer-links li {
+    margin: 0 15px; /* Space between links */
+}
+.footer-links a {
+    text-decoration: none; 
+    color: blue; /* Link color */
+}
+.sign-up-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center form elements */
+}
+.sign-up-form input {
+    padding: 10px;
+    margin-bottom: 10px; /* Space below input */
+    border: 1px solid #ccc; /* Border for input */
+    border-radius: 5px; /* Rounded corners */
+    width: 200px; /* Fixed width for input */
+}
+.sign-up-form button {
+    padding: 10px 20px;
+    background-color: #007BFF; /* Button color */
+    color: white; /* Text color */
+    border: none; /* Remove border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; 
+}
+
+.sign-up-form button:hover {
+    background-color: #0056b3;
+}
