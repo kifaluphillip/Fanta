@@ -17,6 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
+    background-jmage:url("images/width1960.webp");
 }
 @media (max-width: 768px) {
     header {
@@ -174,7 +175,6 @@ button:hover {
     width: 50%;
     height: auto;
     border-radius: 10px;
-    mix-blend-mode: multiply;
 }
 
 .product:hover {
