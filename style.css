@@ -17,7 +17,7 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-jmage:url("images/width1960.webp");
+    background-image:url("images/width1960.webp");
 }
 @media (max-width: 768px) {
     header {
