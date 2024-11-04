@@ -26,28 +26,3 @@ document.getElementById('menuToggle').addEventListener('click', function() {
     navList.classList.toggle('active'); // Toggle 'active' class on click
 });
 
-// Get modal element
-const visionModal = document.getElementById('visionModal');
-
-// Get button that opens the modal
-const visionButton = document.getElementById('visionButton');
-
-// Get the <span> element that closes the modal
-const closeVision = document.getElementById('closeVision');
-
-// When the user clicks the button, open the modal 
-visionButton.addEventListener('click', function() {
-    visionModal.style.display = 'block';
-});
-
-// When the user clicks on <span> (x), close the modal
-closeVision.addEventListener('click', function() {
-    visionModal.style.display = 'none';
-});
-
-// When the user clicks anywhere outside of the modal, close it
-window.addEventListener('click', function(event) {
-    if (event.target === visionModal) {
-        visionModal.style.display = 'none';
-    }
-});
