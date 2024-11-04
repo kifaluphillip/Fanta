@@ -74,23 +74,6 @@ main {
 section {
     margin-bottom: 40px;
 }
-.search-form {
-    display: flex;
-    align-items: center; /* Center the search input and button */
-}
-
-.search-input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    flex: 1; /* Makes the input take available space */
-    transition: border-color 0.3s;
-}
-
-.search-input:focus {
-    outline: none;
-    border-color: #007BFF; /* Change to your preferred color */
-}
 
 button {
     padding: 8px 12px;
