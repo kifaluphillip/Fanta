@@ -9,6 +9,32 @@ body {
     margin: 0;
     padding: 0;
 }
+.menu-toggle {
+    display: none; /* Hide toggle by default */
+    font-size: 2em; /* Size for the toggle button */
+    background: none; /* No background */
+    border: none; /* No border */
+    cursor: pointer; /* Pointer on hover */
+    color: black; /* Toggle color */
+}
+
+/* Navigation list */
+.nav-list {
+    list-style: none;
+    display: flex; /* Default to horizontal on desktop */
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-list {
+        display: none; /* Hide menu by default on mobile */
+        flex-direction: column; /* Stack vertically */
+        position: absolute; /* Position absolutely */
+        top: 60px; /* Position below header */
+        right: 20px; /* Align to the right */
+        background: white; /* Background for the dropdown */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3); /* Shadow for dropdown */
+        padding: 10px; /* Padding around the items */
+    }
 
 header {
     background-color: #ff6f20;
