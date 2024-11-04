@@ -12,7 +12,6 @@ body {
 .menu-toggle {
     display: none; /* Hide toggle by default */
     font-size: 2em; /* Size for the toggle button */
-    background: none; /* No background */
     border: none; /* No border */
     cursor: pointer; /* Pointer on hover */
     color: black; /* Toggle color */
