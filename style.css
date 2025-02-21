@@ -43,6 +43,7 @@ header {
     align-items: center;
     padding: 10px;
     background-image:url("images/width1960.webp");
+    position:fixed;
 }
 @media (max-width: 768px) {
     header {
